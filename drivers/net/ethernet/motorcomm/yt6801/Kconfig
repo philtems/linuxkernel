@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: GPL-2.0-only
+config YT6801
+	tristate "Motorcomm YT6801 Ethernet support"
+	depends on PCI
+	select PHYLIB
+	help
+	  This driver supports Motorcomm YT6801 Gigabit Ethernet adapters.
+	  
+	  To compile this driver as a module, choose M here. The module
+	  will be called yt6801.
